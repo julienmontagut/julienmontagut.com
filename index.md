@@ -1,7 +1,6 @@
-# Julien Montagut
+---
+layout: home
+title: About me
+---
 
-Follow me on:
-
-- [GitHub](https://github.com/julienmontagut)
-- [LinkedIn](https://www.linkedin.com/in/julien-montagut/)
-- [Twitter](https://twitter.com/jumontagut)
+I'm a Tech Lead and software developer...
