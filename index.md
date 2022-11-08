@@ -2,6 +2,10 @@
 layout: home
 ---
 
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="julienmontagut" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/julienmontagut/fr?trk=profile-badge">Julien Montagut</a></div>
+
 I'm a full stack developer, with a strong focus on the backend. I've been
 working with C# and .NET for more than 10 years.
 
