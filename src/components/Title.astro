@@ -1,0 +1,26 @@
+---
+
+---
+
+<!-- A big capitalized and stilized serif text -->
+<span class="title">
+    <slot/>
+</span>
+
+<style>
+    /* Defines the text as centered and a serif colorful gradient */
+    .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 5em;
+        font-weight: 900;
+        text-align: left;
+        vertical-align: middle;
+        margin: auto;
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.05em;
+        /* Make letters from different lines overlap */
+        line-height: 0.9;
+    }
+</style>

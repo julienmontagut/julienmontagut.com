@@ -1,4 +1,7 @@
 ---
+import Avatar from "../components/Avatar.astro";
+import Card from "../components/Card.astro";
+import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -27,10 +30,33 @@ import Layout from "../layouts/Layout.astro";
             >
         </div> -->
 
-        <h1>Julien Montagut</h1>
+        <div class="introduction">
+            <Avatar src="/images/profile-picture.jpeg" alt="Julien's Photo"/>
+            <!-- Box items one below another -->
+            <div class="flex flex-col">
+                <Title>Julien <br />Montagut</Title>
+                <div class="tagline">
+                    Hi, I'm a freelance tech lead and software engineer.
+                </div>
+            </div>
+        </div>
 
-        <div class="tagline">
-            I'm a full stack developer, building great applications
+        <div>
+            <h1>Services</h1>
+            <div class="card">
+                <h2>Software Developement</h2>
+                <p>
+                    I can help you build your product from scratch or improve
+                    your existing codebase.
+                </p>
+            </div>
+            <div class="card">
+                <h2 >Agile Skills</h2>
+                <p>
+                    I can help you build your product from scratch or improve
+                    your existing codebase.
+                </p>
+            </div>
         </div>
 
         <h2>🤸‍♀️ Agility</h2>
@@ -52,16 +78,16 @@ import Layout from "../layouts/Layout.astro";
         </p>
         <h2>🛠 Skills</h2>
         <h3>🖥️ Programming languages</h3>
-        <!-- <Card
+        <ul role="list" class="link-card-grid">
+        <Card
             title="C#"
             body="I've been working with C# for more than 10 years. I've been using it for backend development, desktop applications, and mobile applications."
-            href="#"
         />
         <Card
             title="Rust"
             body="I've been learning Rust for a few months now. I'm planning to use it for backend development."
-            href="#"
-        /> -->
+        />
+</ul>
         <ul>
             <li>
                 <img
@@ -137,36 +163,35 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    :root {
-        --color-primary: #4a0ffa;
-        --color-secondary: #da2c43;
-    }
     main {
         margin: auto;
         padding: 1rem;
         max-width: 80ch;
         text-align: justify;
     }
-    h1 {
-        margin: 2em 0;
-        font-size: 2rem;
-        background: linear-gradient(
-            90deg,
-            var(--color-primary),
-            var(--color-secondary)
-        );
-        background-clip: text;
-        color: transparent;
+    .introduction {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
     }
     .tagline {
-        font-size: 1.5rem;
-        font-weight: 300;
-        margin-bottom: 2em;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    .tagline::before {
+        content: "👋";
+        margin-right: 0.5rem;
     }
     h2 {
-        font-size: 1.5rem;
+        margin-top: 2rem;
     }
     h3 {
-        font-size: 1.25rem;
+        margin-top: 1rem;
     }
+    .link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
 </style>
