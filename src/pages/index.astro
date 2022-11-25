@@ -1,0 +1,172 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Julien Montagut">
+    <main>
+        <!-- <script
+            src="https://platform.linkedin.com/badges/js/profile.js"
+            async
+            defer
+            type="text/javascript"
+        ></script>
+
+        <div
+            class="badge-base LI-profile-badge"
+            data-locale="fr_FR"
+            data-size="large"
+            data-theme="dark"
+            data-type="VERTICAL"
+            data-vanity="julienmontagut"
+            data-version="v1"
+        >
+            <a
+                class="badge-base__link LI-simple-link"
+                href="https://fr.linkedin.com/in/julienmontagut/fr?trk=profile-badge"
+                >Julien Montagut</a
+            >
+        </div> -->
+
+        <h1>Julien Montagut</h1>
+
+        <div class="tagline">
+            I'm a full stack developer, building great applications
+        </div>
+
+        <h2>🤸‍♀️ Agility</h2>
+        <p>
+            I'm an advocate for Agile principles. Using Agile practices and the
+            SCRUM framework, I've helped teams to improve their processes and
+            deliver better software. For me being Agile goes through puting in
+            place the right processes and tools to help teams to deliver better
+            software.
+        </p>
+        <p>
+            As such, some practices are very important to me, such as:
+            <ul>
+                <li>Continuous Integration</li>
+                <li>Continuous delivery</li>
+                <li>Pair Programming</li>
+                <li>Test driven development</li>
+            </ul>
+        </p>
+        <h2>🛠 Skills</h2>
+        <h3>🖥️ Programming languages</h3>
+        <!-- <Card
+            title="C#"
+            body="I've been working with C# for more than 10 years. I've been using it for backend development, desktop applications, and mobile applications."
+            href="#"
+        />
+        <Card
+            title="Rust"
+            body="I've been learning Rust for a few months now. I'm planning to use it for backend development."
+            href="#"
+        /> -->
+        <ul>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"
+                    alt="C#"
+                />
+            </li>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white"
+                    alt="Rust"
+                />
+            </li>
+            <img
+                src="https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white"
+                alt="Swift"
+            />
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"
+                    alt="TypeScript"
+                />
+            </li>
+        </ul>
+        <h3>📚 Frameworks and libraries</h3>
+        <ul>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-.NET%20Core-5C2D91?style=flat-square&logo=dotnet&logoColor=white"
+                    alt=".NET Core"
+                />
+            </li>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white"
+                    alt="React"
+                />
+            </li>
+        </ul>
+        <h3>🗄️ Databases</h3>
+        <ul>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"
+                    alt="PostgreSQL"
+                />
+            </li>
+            <li>
+                <img
+                    src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"
+                    alt="MongoDB"
+                />
+            </li>
+        </ul>
+        <h2>💼 Experience</h2>
+        <p><b>2021 - Present:</b> Freelance software developer and tech lead</p>
+        <p>
+            <b>2019 - 2021:</b> Lead backend developer at [Wiidii](https://www.wiidii.com/)
+        </p>
+        <p><b>2017 - 2019:</b> CTO at [Clezer](https://www.clezer.com/)</p>
+        <p>
+            <b>2015 -2017:</b> Technical Lead @ [RE'FLEKT GmbH](https://www.re-flekt.com/)
+        </p>
+        <p>
+            <b>2013 - 2015:</b> Software Engineer @ [RE'FLEKT GmbH](https://www.re-flekt.com/)
+            <b>Before 2013:</b> Various freelance projects
+        </p>
+        <h2>📚 Education</h2>
+        <p><b>2012:</b> Master's degree in Computer Science</p>
+        <h2>📝 Certifications</h2>
+        <p><b>2015:</b> Certified SCRUM Product Owner (CSPO)</p>
+    </main>
+</Layout>
+
+<style>
+    :root {
+        --color-primary: #4a0ffa;
+        --color-secondary: #da2c43;
+    }
+    main {
+        margin: auto;
+        padding: 1rem;
+        max-width: 80ch;
+        text-align: justify;
+    }
+    h1 {
+        margin: 2em 0;
+        font-size: 2rem;
+        background: linear-gradient(
+            90deg,
+            var(--color-primary),
+            var(--color-secondary)
+        );
+        background-clip: text;
+        color: transparent;
+    }
+    .tagline {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2em;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+</style>
