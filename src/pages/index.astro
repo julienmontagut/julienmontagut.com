@@ -1,16 +1,15 @@
 ---
-import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Julien Montagut">
-    <main>
-        <div class="introduction">
-            <img class="profile" src="/images/profile-picture.jpeg" alt="Julien's Photo"/>
+    <main class="container max-w-lg justify-center m-auto">
+        <div class="flex justify-center align-middle p-2">
+            <img class="max-h-48 p-3 w-auto rounded-full" src="/images/profile-picture.jpeg" alt="Julien's Photo"/>
             <!-- Box items one below another -->
-            <div class="flex flex-col">
-                <Title>Julien <br />Montagut</Title>
-                <div class="tagline">
+            <div class="flex-row align-middle p-3 my-auto">
+                <h1 class="font-serif font-bold text-6xl text-transparent leading-10 bg-clip-text bg-gradient-to-r from-ultramarine to-rusty-red">Julien <br />Montagut</h1>
+                <div class="mt-5 italic font-sans font-light text-grey-200">
                     Hi, I'm a freelance tech lead and software engineer.
                 </div>
             </div>
@@ -33,7 +32,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div> -->
 
-        <h2>🤸‍♀️ Agility</h2>
+        <h2 class="my-5 font-serif text-3xl tracking-wider">🤸‍♀️ Agility</h2>
         <p>
             I'm an advocate for Agile principles. Using Agile practices and the
             SCRUM framework, I've helped teams to improve their processes and
@@ -43,17 +42,17 @@ import Layout from "../layouts/Layout.astro";
         </p>
         <p>
             As such, some practices are very important to me, such as:
-            <ul class="bullets">
+            <ul>
                 <li>Continuous Integration</li>
                 <li>Continuous delivery</li>
                 <li>Pair Programming</li>
                 <li>Test driven development</li>
             </ul>
         </p>
-        <h2>🛠 Skills</h2>
+        <h2 class="my-5 font-serif text-3xl tracking-wider">🛠 Skills</h2>
         <h3>🖥️ Programming languages</h3>
         <ul role="list" class="link-card-grid">
-</ul>
+        </ul>
         <ul>
             <li>
                 <img
@@ -110,7 +109,7 @@ import Layout from "../layouts/Layout.astro";
                 />
             </li>
         </ul>
-        <h2>💼 Experience</h2>
+        <h2 class="my-5 font-serif text-3xl tracking-wider">💼 Experience</h2>
         <p><b>2021 - Present:</b> Freelance software developer and tech lead</p>
         <p>
             <b>2019 - 2021:</b> Lead backend developer at [Wiidii](https://www.wiidii.com/)
@@ -123,58 +122,12 @@ import Layout from "../layouts/Layout.astro";
             <b>2013 - 2015:</b> Software Engineer @ [RE'FLEKT GmbH](https://www.re-flekt.com/)
             <b>Before 2013:</b> Various freelance projects
         </p>
-        <h2>📚 Education</h2>
+        <h2 class="my-5 font-serif text-3xl tracking-wider">📚 Education</h2>
         <p><b>2012:</b> Master's degree in Computer Science</p>
-        <h2>📝 Certifications</h2>
+        <h2 class="my-5 font-serif text-3xl tracking-wider">📝 Certifications</h2>
         <p><b>2015:</b> Certified SCRUM Product Owner (CSPO)</p>
     </main>
 </Layout>
 
 <style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        max-width: 80ch;
-        text-align: justify;
-    }
-    ul {
-        @apply ml-8;
-        @apply mt-8;
-    }
-    ul.bullets {
-        @apply list-disc;
-        @apply ml-8;
-        @apply mt-4;
-    }
-    img.profile {
-        @apply h-64 w-64 rounded-full;
-        @apply object-cover;
-        @apply border-4;
-        border-color: var(--color-accent);
-    }
-    .introduction {
-        display: flex;
-        flex-direction: row;
-        padding: 1rem;
-    }
-    .tagline {
-        font-style: italic;
-        margin-bottom: 2rem;
-    }
-    .tagline::before {
-        content: "👋";
-        margin-right: 0.5rem;
-    }
-    h2 {
-        margin-top: 2rem;
-    }
-    h3 {
-        margin-top: 1rem;
-    }
-    .link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
 </style>
