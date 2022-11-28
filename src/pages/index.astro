@@ -1,133 +1,94 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import Page from "../layouts/BasePage.astro";
 ---
 
-<Layout title="Julien Montagut">
-    <main class="container max-w-lg justify-center m-auto">
-        <div class="flex justify-center align-middle p-2">
-            <img class="max-h-48 p-3 w-auto rounded-full" src="/images/profile-picture.jpeg" alt="Julien's Photo"/>
-            <!-- Box items one below another -->
-            <div class="flex-row align-middle p-3 my-auto">
-                <h1 class="font-serif font-bold text-6xl text-transparent leading-10 bg-clip-text bg-gradient-to-r from-ultramarine to-rusty-red">Julien <br />Montagut</h1>
-                <div class="mt-5 italic font-sans font-light text-grey-200">
-                    Hi, I'm a freelance tech lead and software engineer.
-                </div>
-            </div>
-        </div>
+<Page title="Julien Montagut">
+  <!-- Hero -->
+  <section class="flex flex-col md:flex-row justify-center items-center h-screen">
+    <img
+      src="/images/profile-picture.jpeg"
+      alt="Julien Montagut"
+      class="rounded-full w-64 h-64 m-8 ring-4 ring-ultramarine"
+    />
+    <div class="flex-col m-8">
+      <h1
+        class="text-6xl font-bold font-serif mb-2 bg-gradient-to-r from-ultramarine to-violet-400 w-fit bg-clip-text text-transparent"
+      >
+        Julien<br /> Montagut
+      </h1>
 
-        <!-- <div>
-            <h1>Services</h1>
-            <div>
-                <h2>Software Developement</h2>
-                <p>
-                    I can help you build your product from scratch or improve
-                    your existing codebase.
-                </p>
-            </div>
-            <div>
-                <h2 >Agile Skills</h2>
-                <p>
-                    I can help you improve your team's agility and productivity.
-                </p>
-            </div>
-        </div> -->
+      <p class="text-lg">
+        Hi 👋, I'm a freelance <span class="font-bold text-rust">Tech Lead</span> based in Bordeaux, France 🇫🇷
+      </p>
+      <div class="flex space-x-4 mt-4">
+        <!-- An svg graphic of linkedin logo as a link -->
+        <a href="https://linkedin.com/in/julienmontagut" class="dark:fill-gray-50 hover:fill-rust dark:hover:fill-rust">
+          <svg aria-hidden="true" height="24" width="24" version="1.1" viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://github.com/julienmontagut" class="dark:fill-gray-50 hover:fill-rust dark:hover:fill-rust">
+          <svg aria-hidden="true" height="24" width="24" version="1.1" viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <h2 class="my-5 font-serif text-3xl tracking-wider">🤸‍♀️ Agility</h2>
-        <p>
-            I'm an advocate for Agile principles. Using Agile practices and the
-            SCRUM framework, I've helped teams to improve their processes and
-            deliver better software. For me being Agile goes through puting in
-            place the right processes and tools to help teams to deliver better
-            software.
-        </p>
-        <p>
-            As such, some practices are very important to me, such as:
-            <ul>
-                <li>Continuous Integration</li>
-                <li>Continuous delivery</li>
-                <li>Pair Programming</li>
-                <li>Test driven development</li>
-            </ul>
-        </p>
-        <h2 class="my-5 font-serif text-3xl tracking-wider">🛠 Skills</h2>
-        <h3>🖥️ Programming languages</h3>
-        <ul role="list" class="link-card-grid">
-        </ul>
-        <ul>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"
-                    alt="C#"
-                />
-                <!-- I've been working with C# for more than 10 years. -->
-            </li>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white"
-                    alt="Rust"
-                />
-                <!-- I've been learning Rust for a few months now. -->
-            </li>
-            <img
-                src="https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white"
-                alt="Swift"
-            />
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"
-                    alt="TypeScript"
-                />
-            </li>
-        </ul>
-        <h3>📚 Frameworks and libraries</h3>
-        <ul>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-.NET%20Core-5C2D91?style=flat-square&logo=dotnet&logoColor=white"
-                    alt=".NET Core"
-                />
-            </li>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white"
-                    alt="React"
-                />
-            </li>
-        </ul>
-        <h3>🗄️ Databases</h3>
-        <ul>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"
-                    alt="PostgreSQL"
-                />
-            </li>
-            <li>
-                <img
-                    src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"
-                    alt="MongoDB"
-                />
-            </li>
-        </ul>
-        <h2 class="my-5 font-serif text-3xl tracking-wider">💼 Experience</h2>
-        <p><b>2021 - Present:</b> Freelance software developer and tech lead</p>
-        <p>
-            <b>2019 - 2021:</b> Lead backend developer at [Wiidii](https://www.wiidii.com/)
-        </p>
-        <p><b>2017 - 2019:</b> CTO at [Clezer](https://www.clezer.com/)</p>
-        <p>
-            <b>2015 -2017:</b> Technical Lead @ [RE'FLEKT GmbH](https://www.re-flekt.com/)
-        </p>
-        <p>
-            <b>2013 - 2015:</b> Software Engineer @ [RE'FLEKT GmbH](https://www.re-flekt.com/)
-            <b>Before 2013:</b> Various freelance projects
-        </p>
-        <h2 class="my-5 font-serif text-3xl tracking-wider">📚 Education</h2>
-        <p><b>2012:</b> Master's degree in Computer Science</p>
-        <h2 class="my-5 font-serif text-3xl tracking-wider">📝 Certifications</h2>
-        <p><b>2015:</b> Certified SCRUM Product Owner (CSPO)</p>
-    </main>
-</Layout>
+  <main class="container max-w-screen-xl justify-center m-auto">
+    <!-- About -->
+    <Section title="About">
+      <p>
+        I'm a software engineer and tech lead with 10+ years of experience in building web applications. I'm currently
+        working as a freelance consultant.
+      </p>
+      <br />
+      <a href="/about" class="text-ultramarine hover:text-rust hover:underline underline-offset-2">Read more...</a>
+    </Section>
 
-<style>
-</style>
+    <Section title="Services">
+      <p>I offer a wide range of services, from software development to architecture and lead technical roles.</p>
+      <p>I can help you with:</p>
+      <ul class="list-disc list-inside m-4">
+        <li>Architecture design</li>
+        <li>Software development</li>
+        <li>Team management</li>
+        <li>Leadership</li>
+        <li>Agile practices:</li>
+        <ul class="list-disc list-inside ml-8">
+          <li>Test driven development</li>
+          <li>Continuous delivery</li>
+          <li>Pair programming</li>
+        </ul>
+      </ul>
+
+      <a href="/about" class="text-ultramarine hover:text-rust hover:underline underline-offset-2">More...</a>
+
+      <!-- <h3 class="text-2xl mt-8 mb-2 font-serif font-bold text-zinc-600">Pricing</h3>
+      <div class="grid p-2 lg:grid-cols-2 gap-2">
+        <Offer title="Development">
+          I can help you build your web application from scratch or improve an existing one.
+        </Offer>
+        <Offer title="Tech Lead">
+          I can help you manage your team and make sure they deliver the best software they can.
+        </Offer>
+      </div> -->
+    </Section>
+    <Section title="Contact">
+      <div class="flex justify-center">
+        <a
+          href="mailto:_@julienmontagut.com?subject=Hello%20Julien"
+          class="px-4 py-2 text-xl border border-zinc-200 dark:border-zinc-700 bg-ultramarine text-zinc-50 rounded-lg hover:bg-rust shadow-sm shadow-violet-400"
+          ><span class="pr-2"> ✉️</span>E-mail Me!</a
+        >
+      </div>
+    </Section>
+  </main>
+</Page>

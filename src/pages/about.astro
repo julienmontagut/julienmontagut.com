@@ -1,0 +1,84 @@
+---
+import Experience from "../components/Experience.astro";
+import Section from "../components/Section.astro";
+import Page from "../layouts/Page.astro";
+---
+
+<Page title="About">
+<Section title="Skills">
+
+    <h3 class="font-bold mt-4 mb-2">🖥️ Programming languages</h3>
+
+    <ul role="list" class="link-card-grid"></ul>
+    <ul class="flex flex-row">
+      <li>
+        <img
+          src="https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"
+          alt="C#"
+        />
+        <!-- I've been working with C# for more than 10 years. -->
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+        <!-- I've been learning Rust for a few months now. -->
+      </li>
+      <img src="https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white" alt="Swift" />
+      <li>
+        <img
+          src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"
+          alt="TypeScript"
+        />
+      </li>
+    </ul>
+        <h3 class="font-bold mt-4 mb-2">📚 Frameworks and libraries</h3>
+    <ul class="flex flex-row">
+      <li>
+        <img
+          src="https://img.shields.io/badge/-.NET%20Core-5C2D91?style=flat-square&logo=dotnet&logoColor=white"
+          alt=".NET Core"
+        />
+      </li>
+      <li>
+        <img
+          src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white"
+          alt="React"
+        />
+      </li>
+    </ul>
+        <h3 class="font-bold mt-4 mb-2">🗄️ Databases</h3>
+    <ul class="flex flex-row">
+      <li>
+        <img
+          src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"
+          alt="PostgreSQL"
+        />
+      </li>
+      <li>
+        <img
+          src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"
+          alt="MongoDB"
+        />
+      </li>
+    </ul>
+  </Section>
+
+  <Section title="Experience">
+    <Experience title="Freelance software developer and Tech Lead" date="2021-Present" location="Bordeaux, France 🇫🇷">
+    </Experience>
+    <Experience title="Software developer" date="2019-2021" location="Bordeaux, France 🇫🇷" enterprise="Wiidii">
+    </Experience>
+    <Experience title="CTO" date="2017-2019" location="Bordeaux, France 🇫🇷" enterprise="Clezer"/>
+    <Experience title="Technical Lead" date="2015-2017" location="Munich, Germany 🇩🇪" enterprise="RE'FLEKT"/>
+    <Experience title="Software Engineer" date="2013-2015" location="Munich, Germany 🇩🇪" enterprise="RE'FLEKT"/>
+    <Experience title="Various freelance projects" date="Before 2013" location="France 🇫🇷 & UAE 🇦🇪"/>
+  </Section>
+
+  <Section title="Education">
+    <p><b>2012:</b> Master's degree in Computer Science @ ISIMA</p>
+  </Section>
+
+  <Section title="Certifications">
+    <p><b>2015:</b> Certified SCRUM Product Owner (CSPO)</p>
+  </Section>
+
+</Page>

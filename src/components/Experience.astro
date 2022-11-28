@@ -1,0 +1,19 @@
+---
+export interface Props {
+  title: string;
+  date: string;
+  location: string;
+  enterprise?: string;
+}
+const { title, date, location, enterprise } = Astro.props;
+---
+
+<section class="border-b dark:border-gray-600 py-4 mb-4">
+  <div>
+    <h1 class="text-md"><b>{date}:</b> {title}{enterprise ? <span> at {enterprise}</span> : null}</h1>
+    <p class="text-sm text-gray-500 italic">{location}</p>
+    <div class="text-gray-700 text-md">
+      <slot />
+    </div>
+  </div>
+</section>
