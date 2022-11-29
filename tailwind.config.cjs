@@ -7,6 +7,8 @@ module.exports = {
 				"space": "#1e1e34",
 				"rust": "#da2c43",
 				"ultramarine": "#4a0ffa",
+				"ultramarine-light": "#6e40ff",
+				"ultramarine-dark": "#2e00d1",
 			},
 		},
 	},
